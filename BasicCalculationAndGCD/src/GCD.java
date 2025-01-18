@@ -4,8 +4,6 @@ public class GCD extends Calculate {
     @Override
     void setResult(Object res) {
         result = (Integer) res;
-        String s = new String("hi");
-        String s2 = new String(new byte['g']);
     }
 
     // implementing getResult() method from Abstract class Calculate to return the integer value to class attribute 'result'
