@@ -21,11 +21,7 @@ public class Modulus extends Calculate{
     }
 
     private boolean isOperationDivideByZero(Integer n1, Integer n2){
-        if (n2 == 0){
-            return true;
-        }else{
-            return false;
-        }
+        return n2 == 0;
     }
 
 

@@ -39,11 +39,7 @@ public class Division extends Calculate{
     }
 
     private boolean isOperationDivideByZero(Integer n1, Integer n2){
-        if (n2 == 0){
-            return true;
-        }else{
-            return false;
-        }
+        return n2 == 0;
     }
 
     // this method checks if the attribute Calculate.result has a decimal value or not.
