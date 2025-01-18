@@ -3,7 +3,7 @@ public class Division extends Calculate{
     // implementing setResult method from Abstract class Calculate to set the integer value to class attribute 'result'
     @Override
     void setResult(Object res) {
-        result = (Double) res;
+        result = res;
     }
 
     // implementing getResult() method from Abstract class Calculate to return the integer value to class attribute 'result'
