@@ -15,7 +15,7 @@ public class Division extends Calculate{
     // implementing Calculate.calculate() method to perform division operation
     @Override
     public void calculate(Integer num1, Integer num2) {
-        if(!isOperationDivideByZero(num1, num2)) {
+        if(!isOperationDivideByZero( num2)) {
             this.setResult(num1.doubleValue() / num2);
         }
     }
@@ -30,7 +30,7 @@ public class Division extends Calculate{
             System.out.println("Division : "+ num1.toString()+ " / "+ num2.toString() + " = " + getResult().intValue());
         }else{
             // if Calculate.result has a decimal value, then print the result with decimal portion
-            if( isOperationDivideByZero((Integer) num1, (Integer) num2)){
+            if( isOperationDivideByZero((Integer) num2)){
                 System.out.println("Division : "+ num1.toString()+ " / "+ num2.toString() + " is invalid ");
             }else {
                 System.out.println("Division : " + num1.toString() + " / " + num2.toString() + " = " + getResult().toString());
@@ -38,7 +38,7 @@ public class Division extends Calculate{
         }
     }
 
-    private boolean isOperationDivideByZero(Integer n1, Integer n2){
+    private boolean isOperationDivideByZero(Integer n2){
         return n2 == 0;
     }
 
