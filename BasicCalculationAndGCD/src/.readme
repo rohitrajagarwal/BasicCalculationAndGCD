@@ -1,0 +1,41 @@
+What does it feel like writing code in Java?
+    After 9+ years, one does feel like they are getting old.
+    Back in the day, Eclipse IDE was the most powerful one I had the opportunity to work with.
+    However, the IDEs of today are so much more powerful and have an abundance of features to aid development.
+    Everything seems so easy. Your IDE is:
+        Auto-saving what you write;
+        Auto-building the project;
+        Making your code ready to run at every modification;
+        Providing you a better error resolution methods and techniques;
+        Predicting what your next statement has to be (mind blowing)
+
+What is the project all about?
+    From the surface it might seem like it's just a very complicated code for performing arithmetic operations and calculate GCD.
+    In the project's essence, it more about implementing the Object Oriented Program Concepts rather than the functionality.
+    For example:
+        Polymorphism. Let's break it down - "Poly"-"Morphism" - "Poly" represents "many" and "Morphism" represents ability to change/morph into other forms.
+        Therefore, in simple terms Polymorphism refer to a concept in which a piece of code that takes upon many forms.
+        Let's understand this better using the calculator app as foundation. Among the several occurrences of polymorphism, some of the polymorph-ed methods are below:
+            Addition.calculate(Integer, Integer);
+            Subtraction.calculate(Integer, Integer);
+            Multiplication.calculate(Integer, Integer);
+            Division.calculate(Integer, Integer);
+            Modulus.calculate(Integer, Integer);
+        From a readability standpoint, it is easy to know that a 'calculate' method in 'Addition' Class would perform the mathematics addition.
+        Similarly, a 'calculate' method in Subtraction will perform mathematics subtraction, and so on..
+        From a OOP concept perspective, it is important to note that calculate() is a method is "inherited" from "Calculate" abstract class and "implemented" in the subclass (Addition, Subtraction, ...)
+        Does this mean, only methods that are inherited from it's superclass can be polymorph-ed? Absolutely not!
+        any method in Java can be polymorph-ed as long as the method name remains same.
+        A common usage that we typically observe is a polymorph-ed "Constructors". Have you ever used the following:
+            Integer number1 = new Integer(10);  / Integer number1 = new Integer("10");
+            OR
+            String s = new String("hi"); / String s2 = new String(new byte['g']);
+            ever wondered how is it that the same method "Integer()" accepts an integer constant literal and a string in the parenthesis?
+            The answer is "Polymorphism". The process of utilizing the same method with different signatures is called "Method Overloading"
+
+
+Feel free to build on this and identify the other OOP concepts used in this project. Submit your edits to .readme file and I will review it.
+
+
+
+
